@@ -4,8 +4,22 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+header, .category-list{
+   position: sticky;
+   top: 0;
+   z-index: 10;
+   background: #fff;
+
+}
 .navbar{
     display: flex;
+    gap: 2rem;
     align-items: center;
     padding: 0.5rem 1rem;
     justify-content: space-between;
@@ -77,6 +91,7 @@
 }
 .main-layout{
     display: flex;
+    overflow: auto;
 }
 .main-layout .content-wrapper {
     padding: 0 1rem;
@@ -101,6 +116,14 @@
     padding: 0.4rem 0.75rem;
     border-radius: 0.5rem;
     background: rgb(202, 197, 197);
+}
+.category-list .category-button.active {
+    color: white;
+    background: black;
+    pointer-events: none;
+}
+.category-list .category-button:hover {
+    background: rgb(226, 221, 221);
 }
 .content-wrapper .video-list{
     display: grid;
