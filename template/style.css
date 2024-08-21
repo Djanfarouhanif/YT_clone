@@ -93,6 +93,53 @@ header, .category-list{
     display: flex;
     overflow: auto;
 }
+.main-layout .sidebar {
+    width: 280px;
+    padding: 0 0.7rem 0;
+    background: white;
+}
+.sidebar .link-container{
+
+    overflow-y: auto;
+    scrollbar-width: thin;
+    height: calc(100vh - 60px);
+    scrollbar-color: transparent transparent;
+}
+
+.sidebar .link-container:hover{
+    scrollbar-color: #a6a6a6 transparent;
+}
+.sidebar .link-section .link-item {
+    display: flex;
+    font-size: 0.938rem;
+    align-items: center;
+    white-space: nowrap;
+    padding: 0.37rem 0.75rem;
+    margin-bottom: 0.25rem;
+    
+    color: black;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+.sidebar .link-section .link-item:hover{
+    background: rgba(237, 233, 233, 0.737);
+}
+.sidebar .link-section .link-item img{
+    width: 1.4rem;
+    margin-right: 0.63rem;
+}
+
+.sidebar .link-section .section-title {
+    font-size: 0.93rem;
+    font-weight: 600;
+    color: black;
+    margin: 1rem 0 0.5rem 0.5rem;
+}
+.sidebar .section-separator{
+    height: 1px;
+    margin: 0.625rem;
+    background: rgb(201, 197, 197) ;
+}
 .main-layout .content-wrapper {
     padding: 0 1rem;
     overflow-x: hidden;
