@@ -102,3 +102,68 @@
     border-radius: 0.5rem;
     background: rgb(202, 197, 197);
 }
+.content-wrapper .video-list{
+    display: grid;
+    gap: 1rem;
+    padding: 1.25rem 0 4rem'';
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+.video-list .video-card {
+    text-decoration: none;
+}
+
+.video-list .video-card .video-info {
+    display: flex;
+    gap: 0.7rem;
+    padding: 0.7rem;
+
+}
+
+.video-list .video-card .thumbnail-container{
+    position: relative;
+}
+.video-list .video-card .thumbnail {
+    width: 100%;
+    border-radius: 0.5rem;
+    aspect-ratio: 16 / 9;
+
+}
+.video-list .video-card .duration{
+    position: absolute;
+    right: 0.65rem;
+    bottom: 0.8rem;
+    color: #fff;
+    font-size: 0.87rem;
+    padding:0 0.3rem ;
+    border-radius: 0.3rem;
+    background: rgba(20, 20, 20, 0.927);
+}
+.video-list .video-card #icon{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+.video-list .video-card .title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+}
+.video-list .video-card .title:hover {
+    color: rgba(90, 147, 233, 0.786);
+}
+.video-list .video-card p{
+    font-size: 0.8rem;
+    color: rgb(54, 52, 52);
+
+}
+
+.video-list .video-card .channel-name {
+    margin: 0.25rem 0 0.15rem;
+
+}
